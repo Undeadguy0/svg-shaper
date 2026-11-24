@@ -1,0 +1,12 @@
+[package]
+name = "svgshaper-bevy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version = "1.97.1"
+description = "Тонкий плагин Bevy поверх svgshaper"
+publish = false
+
+[dependencies]
+bevy = { version = "0.20", default-features = false, features = ["std", "async_executor", "multi_threaded"] }
+svgshaper = { path = "../svgshaper" }

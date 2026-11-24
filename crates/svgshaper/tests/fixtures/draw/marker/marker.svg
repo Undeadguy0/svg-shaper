@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <marker id="end" markerUnits="userSpaceOnUse" refX="8" refY="8" markerWidth="16" markerHeight="16">
+      <circle cx="8" cy="8" r="6" fill="black"/>
+    </marker>
+  </defs>
+  <line x1="8" y1="32" x2="40" y2="32" stroke="black" stroke-width="1" marker-end="url(#end)"/>
+</svg>
