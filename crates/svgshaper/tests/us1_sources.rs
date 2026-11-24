@@ -13,7 +13,7 @@ fn us1_unreadable_broken_link_and_uppercase_svg() {
     let ok = write_svg(dir.path(), "ok.svg");
     let secret = write_svg(dir.path(), "secret.svg");
     let mut perms = fs::metadata(&secret).unwrap().permissions();
-    perms.set_mode(0);
+    perms.set_mode(0o0);
     fs::set_permissions(&secret, perms).unwrap();
 
     let broken = dir.path().join("broken.svg");
